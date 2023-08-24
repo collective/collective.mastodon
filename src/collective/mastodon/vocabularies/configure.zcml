@@ -1,0 +1,12 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <utility
+      name="collective.mastodon.apps"
+      component=".apps.mastodon_apps"
+      />
+
+  <utility
+      name="collective.mastodon.visibility"
+      component=".visibility.post_visibility"
+      />
+</configure>

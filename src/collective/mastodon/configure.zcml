@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.mastodon"
+    >
+
+  <i18n:registerTranslations directory="locales" />
+
+  <utility
+      factory=".registry.MastodonRegistry"
+      provides="collective.mastodon.interfaces.IMastodonRegistry"
+      />
+
+  <include package=".actions" />
+  <include package=".interpolators" />
+  <include package=".vocabularies" />
+
+</configure>

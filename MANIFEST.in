@@ -1,0 +1,13 @@
+graft src/collective
+graft tests
+graft docs
+prune docs/_build
+include .editorconfig
+include *.md
+include *.GPL
+include *.txt
+include *.yaml
+include *.yml
+include Makefile
+global-exclude *.pyc
+global-exclude .DS_Store

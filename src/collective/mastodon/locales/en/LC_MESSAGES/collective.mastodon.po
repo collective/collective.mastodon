@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-08-25 19:18+0000\n"
+"PO-Revision-Date: 2017-10-11 21:18+0000\n"
+"Last-Translator: Érico Andrei <ericof@plone.org>\n"
+"Language-Team: Érico Andrei <ericof@plone.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/mastodon/actions/mastodon.py:177
+msgid "Action to post a toot to a Mastodon account."
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:176
+msgid "Add Mastodon Action"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:40
+msgid "App to be used"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:178
+msgid "Configure element"
+msgstr ""
+
+#: collective/mastodon/vocabularies/visibility.py:12
+msgid "Direct"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:195
+msgid "Edit Mastodon Action"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:71
+msgid "If content effective date is in the future, schedule the post"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:59
+msgid "If not set, the content language will be used."
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:65
+msgid "Is this a sensitive content?"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:58
+msgid "Language"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:77
+msgid "Main text of the post."
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:39
+msgid "Mastodon App"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:105
+msgid "Post a new toot as ${user}"
+msgstr ""
+
+#: collective/mastodon/actions/configure.zcml:36
+msgid "Post a status to Mastodon"
+msgstr ""
+
+#: collective/mastodon/vocabularies/visibility.py:11
+msgid "Private"
+msgstr ""
+
+#: collective/mastodon/vocabularies/visibility.py:9
+msgid "Public"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:70
+msgid "Schedule post?"
+msgstr ""
+
+#: collective/mastodon/actions/configure.zcml:36
+msgid "Send a status (toot) to Mastodon"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:64
+msgid "Sensitive Content"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:52
+msgid "Spoiler Text"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:76
+msgid "Status"
+msgstr ""
+
+#: collective/mastodon/interpolators/adapters.py:11
+msgid "Tags"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:53
+msgid "Text used for warning."
+msgstr ""
+
+#: collective/mastodon/vocabularies/visibility.py:10
+msgid "Unlisted"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:45
+msgid "Visibility"
+msgstr ""
+
+#: collective/mastodon/actions/mastodon.py:46
+msgid "Visibility of the post"
+msgstr ""
+
+#. Default: "Category"
+#: collective/mastodon/actions/mastodon.pt:14
+msgid "category-contentrules-mastodonsub"
+msgstr ""
+
+#. Default: "Contents in the status field may be replaced with \"$&#123;&#125;\" variables from the table on the bottom of this form."
+#: collective/mastodon/actions/mastodon.pt:4
+msgid "description-contentrules-mastodonsub"
+msgstr ""
+
+#. Default: "Substitution"
+#: collective/mastodon/actions/mastodon.pt:16
+msgid "substitution-contentrules-mastodonsub"
+msgstr ""
+
+#. Default: "Substitutions"
+#: collective/mastodon/actions/mastodon.pt:10
+msgid "title_contentrules_mastodonsub"
+msgstr ""
+
+#. Default: "Variable"
+#: collective/mastodon/actions/mastodon.pt:15
+msgid "variable-contentrules-mastodonsub"
+msgstr ""

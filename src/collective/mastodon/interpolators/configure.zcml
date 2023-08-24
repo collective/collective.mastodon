@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    >
+  <adapter
+      factory=".adapters.TagsSubstitution"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      for="Products.CMFCore.interfaces.IDublinCore"
+      name="tags"
+      />
+</configure>

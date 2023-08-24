@@ -1,0 +1,121 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer jutbgrhNDS1EvUvpoHD0ox4a7obSCT9_IpliStv799M
+      Connection:
+      - keep-alive
+      User-Agent:
+      - collective.mastodon
+    method: GET
+    uri: http://localhost/api/v1/instance/
+  response:
+    body:
+      string: '{"uri":"localhost:3000","title":"Mastodon","short_description":"","description":"","email":"","version":"4.1.6","urls":{"streaming_api":"ws://localhost:4000"},"stats":{"user_count":1,"status_count":10,"domain_count":0},"thumbnail":"http://127.0.0.1/packs/media/images/preview-6399aebd96ccf025654e2977454f168f.png","languages":["en"],"registrations":true,"approval_required":false,"invites_enabled":false,"configuration":{"accounts":{"max_featured_tags":10},"statuses":{"max_characters":500,"max_media_attachments":4,"characters_reserved_per_url":23},"media_attachments":{"supported_mime_types":["image/jpeg","image/png","image/gif","image/heic","image/heif","image/webp","image/avif","video/webm","video/mp4","video/quicktime","video/ogg","audio/wave","audio/wav","audio/x-wav","audio/x-pn-wave","audio/vnd.wave","audio/ogg","audio/vorbis","audio/mpeg","audio/mp3","audio/webm","audio/flac","audio/aac","audio/m4a","audio/x-m4a","audio/mp4","audio/3gpp","video/x-ms-asf"],"image_size_limit":10485760,"image_matrix_limit":16777216,"video_size_limit":41943040,"video_frame_rate_limit":60,"video_matrix_limit":2304000},"polls":{"max_options":4,"max_characters_per_option":50,"min_expiration":300,"max_expiration":2629746}},"contact_account":null,"rules":[]}'
+    headers:
+      Cache-Control:
+      - max-age=180, public
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Aug 2023 14:14:07 GMT
+      ETag:
+      - W/"1aca0f9b1cfe4a7330d15375f45b85b1"
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Mastodon
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-RateLimit-Limit:
+      - '300'
+      X-RateLimit-Remaining:
+      - '298'
+      X-RateLimit-Reset:
+      - '2023-08-25T14:15:00.384064Z'
+      X-Request-Id:
+      - b9faafac-d0c1-4e3f-bf2e-a07a4f70a2ce
+      X-Runtime:
+      - '0.088956'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: status=Just+a+toot%2C+with+%23tags&visibility=public&spoiler_text=&language=en&scheduled_at=4000-01-01T14%3A13%3A14%2B00%3A00
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer jutbgrhNDS1EvUvpoHD0ox4a7obSCT9_IpliStv799M
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - collective.mastodon
+    method: POST
+    uri: http://localhost/api/v1/statuses
+  response:
+    body:
+      string: '{"id":"4","scheduled_at":"4000-01-01T14:13:14.000Z","params":{"text":"Just
+        a toot, with #tags","media_ids":null,"sensitive":null,"spoiler_text":"","visibility":"public","language":"en","scheduled_at":null,"poll":null,"idempotency":null,"with_rate_limit":false,"in_reply_to_id":null,"application_id":1},"media_attachments":[]}'
+    headers:
+      Cache-Control:
+      - private, no-store
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"8b8a44fa21502b88eac8b3dfb3ca2bf2"
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Mastodon
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-RateLimit-Limit:
+      - '300'
+      X-RateLimit-Remaining:
+      - '286'
+      X-RateLimit-Reset:
+      - '2023-08-25T15:00:00.534369Z'
+      X-Request-Id:
+      - 7700936e-2d3e-4649-b7cd-9a59982ff182
+      X-Runtime:
+      - '0.119814'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

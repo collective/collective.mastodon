@@ -1,0 +1,121 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer jutbgrhNDS1EvUvpoHD0ox4a7obSCT9_IpliStv799M
+      Connection:
+      - keep-alive
+      User-Agent:
+      - collective.mastodon
+    method: GET
+    uri: http://localhost/api/v1/instance/
+  response:
+    body:
+      string: '{"uri":"localhost:3000","title":"Mastodon","short_description":"","description":"","email":"","version":"4.1.6","urls":{"streaming_api":"ws://localhost:4000"},"stats":{"user_count":1,"status_count":18,"domain_count":0},"thumbnail":"http://127.0.0.1/packs/media/images/preview-6399aebd96ccf025654e2977454f168f.png","languages":["en"],"registrations":true,"approval_required":false,"invites_enabled":false,"configuration":{"accounts":{"max_featured_tags":10},"statuses":{"max_characters":500,"max_media_attachments":4,"characters_reserved_per_url":23},"media_attachments":{"supported_mime_types":["image/jpeg","image/png","image/gif","image/heic","image/heif","image/webp","image/avif","video/webm","video/mp4","video/quicktime","video/ogg","audio/wave","audio/wav","audio/x-wav","audio/x-pn-wave","audio/vnd.wave","audio/ogg","audio/vorbis","audio/mpeg","audio/mp3","audio/webm","audio/flac","audio/aac","audio/m4a","audio/x-m4a","audio/mp4","audio/3gpp","video/x-ms-asf"],"image_size_limit":10485760,"image_matrix_limit":16777216,"video_size_limit":41943040,"video_frame_rate_limit":60,"video_matrix_limit":2304000},"polls":{"max_options":4,"max_characters_per_option":50,"min_expiration":300,"max_expiration":2629746}},"contact_account":null,"rules":[]}'
+    headers:
+      Cache-Control:
+      - max-age=180, public
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Aug 2023 14:19:29 GMT
+      ETag:
+      - W/"8ef40649e0b83341c46990808ac25c8a"
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Mastodon
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-RateLimit-Limit:
+      - '300'
+      X-RateLimit-Remaining:
+      - '296'
+      X-RateLimit-Reset:
+      - '2023-08-25T14:20:00.927853Z'
+      X-Request-Id:
+      - 4d4e22e3-2d69-4e62-9e6c-6c9b82ba7d38
+      X-Runtime:
+      - '0.028665'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer jutbgrhNDS1EvUvpoHD0ox4a7obSCT9_IpliStv799M
+      Connection:
+      - keep-alive
+      User-Agent:
+      - collective.mastodon
+    method: GET
+    uri: http://localhost/api/v1/scheduled_statuses
+  response:
+    body:
+      string: '[{"id":"4","scheduled_at":"4000-01-01T14:13:14.000Z","params":{"poll":null,"text":"Just
+        a toot, with #tags","language":"en","media_ids":null,"sensitive":null,"visibility":"public","idempotency":null,"scheduled_at":null,"spoiler_text":"","application_id":1,"in_reply_to_id":null,"with_rate_limit":false},"media_attachments":[]},{"id":"1","scheduled_at":"2023-08-26T00:01:00.000Z","params":{"poll":null,"text":"A
+        new package is available: Just added a new Plone addon. collective.mastodon!\r\nPlone,
+        AddOn\r\nhttp://localhost:8080/Plone/a-new-package-is-available\r\nhttps://ericof.com/foo","language":"en","media_ids":null,"sensitive":null,"visibility":"public","idempotency":null,"scheduled_at":null,"spoiler_text":"","application_id":1,"in_reply_to_id":null,"with_rate_limit":false},"media_attachments":[]}]'
+    headers:
+      Cache-Control:
+      - private, no-store
+      Content-Security-Policy:
+      - default-src 'none'; frame-ancestors 'none'; form-action 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      ETag:
+      - W/"3b7aa20d34fe14ae1029d9a974ab35a4"
+      Link:
+      - <http://localhost/api/v1/scheduled_statuses?min_id=4>; rel="prev"
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Mastodon
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-RateLimit-Limit:
+      - '300'
+      X-RateLimit-Remaining:
+      - '295'
+      X-RateLimit-Reset:
+      - '2023-08-25T14:20:00.028530Z'
+      X-Request-Id:
+      - 7c1428da-bad3-44f4-b64c-a4141f2f6a82
+      X-Runtime:
+      - '0.037609'
+      X-XSS-Protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

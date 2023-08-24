@@ -1,0 +1,44 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.mastodon"
+    >
+
+  <include package="plone.app.contentrules" />
+  <include package="plone.contentrules" />
+  <include
+      package="plone.contentrules"
+      file="meta.zcml"
+      />
+
+  <!-- Mastodon action definition -->
+  <adapter factory=".mastodon.MastodonActionExecutor" />
+
+  <browser:page
+      name="plone.actions.Mastodon"
+      for="plone.app.contentrules.browser.interfaces.IRuleActionAdding"
+      class=".mastodon.MastodonAddFormView"
+      permission="plone.app.contentrules.ManageContentRules"
+      />
+
+  <browser:page
+      name="edit"
+      for=".mastodon.IMastodonAction"
+      class=".mastodon.MastodonEditFormView"
+      permission="plone.app.contentrules.ManageContentRules"
+      />
+
+  <plone:ruleAction
+      name="plone.actions.Mastodon"
+      title="Post a status to Mastodon"
+      description="Send a status (toot) to Mastodon"
+      for="*"
+      event="*"
+      schema=".mastodon.IMastodonAction"
+      factory=".mastodon.MastodonAction"
+      addview="plone.actions.Mastodon"
+      editview="edit"
+      />
+
+</configure>
