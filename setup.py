@@ -66,6 +66,7 @@ setup(
             "pytest-mock",
             "pytest",
             "zest.releaser[recommended]",
+            "zestreleaser.towncrier",
             "vcrpy",
             "pytest-vcr",
             "pytest-mock",
