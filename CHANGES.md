@@ -5,3 +5,5 @@
 
 
 ## 1.0.0a1 (2023-08-25)
+
+- Initial release [@ericof]
